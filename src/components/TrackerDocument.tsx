@@ -85,10 +85,9 @@ export default function TrackerDocument({ config }: TrackerDocumentProps) {
                                 </div>
                             ))}
                         </div>
-                        <div className="med-notes">Notes médicaments : ____________________________________________________________________</div>
 
                         {/* Food Section */}
-                        <div className="section-title food shadow-sm mt-4">
+                        <div className="section-title food shadow-sm">
                             <strong>ALIMENTATION</strong>
                             <span className="hint">Noter chaque repas avec les grammes</span>
                         </div>
@@ -131,7 +130,7 @@ export default function TrackerDocument({ config }: TrackerDocumentProps) {
                         </div>
 
                         {/* Observations */}
-                        <div className="observations shadow-sm mt-4">
+                        <div className="observations shadow-sm">
                             <div className="obs-title">Observations (appétit, vomissements, selles, comportement...) :</div>
                             <div className="obs-line"></div>
                             <div className="obs-line"></div>
