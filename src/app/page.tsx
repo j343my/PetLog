@@ -5,9 +5,14 @@ import { TrackerConfig } from '@/types';
 import PetForm from '@/components/PetForm';
 import TrackerDocument from '@/components/TrackerDocument';
 
+const getCurrentMonth = () => {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+};
+
 const DEFAULT_CONFIG: TrackerConfig = {
   petName: 'Swiffy',
-  targetMonth: '2026-03',
+  targetMonth: getCurrentMonth(),
   medications: [
     { id: '1', name: 'Emeprid (2.5 ml)', colorClass: 'emeprid', temporalities: ['Matin', 'Midi', 'Soir'] },
     { id: '2', name: 'Felimazole', colorClass: 'felimazole', temporalities: ['Matin', 'Soir'] },
